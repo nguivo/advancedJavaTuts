@@ -1,5 +1,10 @@
 public class Main {
 
+    @MarkerAnnotation(value = 10)
+    public void sayHello() {
+        System.out.println("The Marker annotation is being used here!");
+    }
+
     public static void main(String[] args) {
         Color c1 = Color.GREEN;
 
@@ -15,5 +20,10 @@ public class Main {
         for (Color color : Color.values()) {
             System.out.println(color.getValue());
         }
+
+        Main mn = new Main();
+        mn.sayHello();
     }
+
+
 }
